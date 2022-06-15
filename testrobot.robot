@@ -29,6 +29,6 @@ Invalid Login
    Input Text   id:user-name    locked_out
    Input Text   id:password    ${user_pass}
    Click Button    id:login-button
-   Page Should Contain    Products
+   Page Should Not Contain    Products
    Set Selenium Speed   ${DELAY}
 [Teardown].             Close Browser
